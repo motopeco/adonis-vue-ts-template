@@ -7,3 +7,5 @@ coverage
 tmp
 .idea
 *.iml
+.nyc_output
+coverage

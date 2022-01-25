@@ -190,6 +190,10 @@ Encore.enableVueLoader(() => {}, {
 
 Encore.enableTypeScriptLoader()
 
+Encore.configureBabel(function (babelConfig) {
+  babelConfig.plugins.push('@babel/plugin-transform-runtime')
+})
+
 /*
 |--------------------------------------------------------------------------
 | Configure logging
