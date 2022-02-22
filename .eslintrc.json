@@ -3,7 +3,15 @@
   "plugins": ["prettier"],
   "parser": "vue-eslint-parser",
   "rules": {
-    "prettier/prettier": ["error"]
+    "prettier/prettier": ["error"],
+    "vue/max-attributes-per-line": [
+      "error",
+      {
+        "singleline": 8,
+        "multiline": 1
+      }
+    ],
+    "vue/html-indent": ["error", 2]
   },
   "parserOptions": {
     "parser": "@typescript-eslint/parser",
